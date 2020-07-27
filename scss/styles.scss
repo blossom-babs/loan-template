@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+
+$font: Ubuntu,
+sans-serif;
+
+$black:#010101;
+$white:#fff;
+$grey:#c4c4c4;
+$red:red;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: $black;
+    font-family: $font;
+}
+
+// body {
+//     // background-image: url(../images/batman.jpg);
+//     height: 100%;
+
+//     background-color: $black;
+//     /* You must set a specified height */
+//     background-position: center;
+//     /* Center the image */
+//     background-repeat: no-repeat;
+//     /* Do not repeat the image */
+//     background-size: cover;
+//     // opacity: 1;
+// }
+
+//     background: lighten($black, 10);
+
+// <span>Photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/s/photos/activism?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+//<span>Photo by <a href="https://unsplash.com/@actionvance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ActionVance</a> on <a href="https://unsplash.com/s/photos/batman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+select:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.wrapper {
+    // box-shadow: 12px 12px 2px rgb(0, 0, 255, .2);
+    margin-left: 20rem;
+    height: 90%;
+    width: 50vw;
+    margin-top: 5rem;
+    background: $white;
+    text-align: center;
+
+    h1 {
+        margin: 2rem;
+        padding-top: 2rem;
+    }
+
+    p {
+        margin-top: 0;
+        padding-top: 0;
+    //     font-size: 1.2rem;
+    //   font-weight: 300;
+    }
+
+    span{
+        color: red;
+    }
+
+    .form {
+        text-align: center;
+        width: 100%;
+        margin: 3rem 0;
+
+        .password {
+            margin-top: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1rem;
+            margin-right: 14rem;
+            // color: lighten($black, 10);
+        }
+
+        .two {
+            margin-top: 1rem;
+        }
+
+        select {
+            margin-bottom: 1rem;
+            width: 50%;
+            margin: 0 auto;
+            // text-align: center;
+        }
+
+        button {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        input {
+            display: block;
+
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+
+            &:focus {
+                outline-color: $white;
+                border: none;
+            }
+        }
+    }
+}
+
+/*       border-top-style: none;
+border-right-style: hidden;
+border-left-style: hidden;
+border-bottom-style: groove;
+*/
+// to make the input field a straight line

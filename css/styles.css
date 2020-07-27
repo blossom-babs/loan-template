@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #010101;
+  font-family: Ubuntu, sans-serif;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+select:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.wrapper {
+  margin-left: 20rem;
+  height: 90%;
+  width: 50vw;
+  margin-top: 5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.wrapper h1 {
+  margin: 2rem;
+  padding-top: 2rem;
+}
+
+.wrapper p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrapper span {
+  color: red;
+}
+
+.wrapper .form {
+  text-align: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.wrapper .form .password {
+  margin-top: 1rem;
+}
+
+.wrapper .form label {
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 14rem;
+}
+
+.wrapper .form .two {
+  margin-top: 1rem;
+}
+
+.wrapper .form select {
+  margin-bottom: 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .form button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrapper .form input {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.wrapper .form input:focus {
+  outline-color: #fff;
+  border: none;
+}
+
+/*       border-top-style: none;
+border-right-style: hidden;
+border-left-style: hidden;
+border-bottom-style: groove;
+*/
+/*# sourceMappingURL=styles.css.map */
