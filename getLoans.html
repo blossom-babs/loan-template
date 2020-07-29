@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamara - Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="background-color: #fff;">
+
+    <style>
+        .row {
+            box-shadow: 12px 12px 2px 1px(#818181);
+        }
+    </style>
+
+    <div class="container">
+
+        <div class="top-nav">
+            <h1>Kamar<span>a.</span></h1>
+            <ul>
+                <li><i class="fas fa-user-alt"></i> <a href="/index.html">My Account</a> </li>
+                <li> <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a></li>
+            </ul>
+        </div>
+
+        <div class="side-nav">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Services</a>
+            <a href="/login.html">Log Out</a>
+            <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a>
+        </div>
+
+        <div class="main">
+            <!-- <p>Take note to fill out accurate information.</p> -->
+            <!-- <h1>Get Loan<span> !</span></h1> -->
+            <div class="get-loans">
+                <form action="">
+
+                    <div class="flex">
+
+                        <!-- flex div 1 -->
+                        <div class="class-1">
+                            <h5>Please fill out the accurate information</h5>
+                            <hr>
+                            <div class="form-group">
+                                <label for="First Name">Loan Amount</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Account Number</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Bank Verification Number</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Bank Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Account Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <!-- flex div 2 -->
+                        <div class="class-2">
+                               <h5>Personal information</h5>
+                               <hr>
+                            <div class="form-group">
+                                <label for="First Name">Current Address</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Current Occupation</label>
+                                <em>This will not affect your loan approval.</em>
+                                <input type="text" class="form-control" required>
+                                  
+                                    <!-- class="form-text text-muted" -->
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">Date Of Birth</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">State</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="First Name">City Of Residence</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="div-button">
+                        <button class="btn btn-md btn-danger">Get Loan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

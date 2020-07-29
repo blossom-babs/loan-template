@@ -2,7 +2,7 @@
 
 $font: Ubuntu,
 sans-serif;
-
+//#818181
 $black:#010101;
 $white:#fff;
 $grey:#c4c4c4;
@@ -25,25 +25,6 @@ body {
     font-family: $font;
 }
 
-// body {
-//     // background-image: url(../images/batman.jpg);
-//     height: 100%;
-
-//     background-color: $black;
-//     /* You must set a specified height */
-//     background-position: center;
-//     /* Center the image */
-//     background-repeat: no-repeat;
-//     /* Do not repeat the image */
-//     background-size: cover;
-//     // opacity: 1;
-// }
-
-//     background: lighten($black, 10);
-
-// <span>Photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/s/photos/activism?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-//<span>Photo by <a href="https://unsplash.com/@actionvance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ActionVance</a> on <a href="https://unsplash.com/s/photos/batman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 textarea:hover,
 input:hover,
@@ -63,77 +44,57 @@ select:focus {
     box-shadow: none !important;
 }
 
+
+span,
+i {
+    color: red;
+}
+
+.flex {
+    display: flex;
+}
+
+.note {
+    margin: 3rem;
+    color: $black;
+
+    a {
+        text-decoration: none;
+        color: red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+hr {
+    width: 5rem;
+    background-color: red;
+}
+
 .wrapper {
     // box-shadow: 12px 12px 2px rgb(0, 0, 255, .2);
     margin-left: 20rem;
-    height: 90%;
+    height: 85%;
     width: 50vw;
     margin-top: 5rem;
     background: $white;
     text-align: center;
 
     h1 {
-        margin: 2rem;
+        margin-top: 2rem;
         padding-top: 2rem;
+        padding-bottom: 0;
     }
 
     p {
         margin-top: 0;
         padding-top: 0;
-    //     font-size: 1.2rem;
-    //   font-weight: 300;
+
     }
 
-    span{
-        color: red;
-    }
 
-    .form {
-        text-align: center;
-        width: 100%;
-        margin: 3rem 0;
-
-        .password {
-            margin-top: 1rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 1rem;
-            margin-right: 14rem;
-            // color: lighten($black, 10);
-        }
-
-        .two {
-            margin-top: 1rem;
-        }
-
-        select {
-            margin-bottom: 1rem;
-            width: 50%;
-            margin: 0 auto;
-            // text-align: center;
-        }
-
-        button {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        input {
-            display: block;
-
-            width: 50%;
-            margin: 0 auto;
-            margin-bottom: 1rem;
-
-            &:focus {
-                outline-color: $white;
-                border: none;
-            }
-        }
-    }
 }
 
 /*       border-top-style: none;
@@ -142,3 +103,211 @@ border-left-style: hidden;
 border-bottom-style: groove;
 */
 // to make the input field a straight line
+
+.form-group input {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+// side navigation and stuff
+
+.side-nav {
+    height: 100%;
+    width: 15rem;
+    position: fixed;
+    z-index: 1;
+    top: 6rem;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+
+    // padding-top: 20px;
+    a:nth-child(1) {
+        padding-top: 5rem;
+    }
+
+    a {
+        padding: 2rem;
+        text-decoration: none;
+        font-size: 25px;
+        // color: #818181;
+        color: $white;
+        display: block;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .side-nav {
+        padding-top: 15px;
+    }
+
+    .side-nav a {
+        font-size: 18px;
+    }
+}
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the side-nav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    margin-top: 10rem;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+
+    h1 {
+        margin-left: -5rem;
+        margin-top: 2rem;
+
+    }
+
+    ul {
+        display: flex;
+        margin-left: 50rem;
+        margin-top: -3rem;
+        list-style-type: none;
+
+        li:nth-child(1) {
+            //  padding-right: 2rem;
+            font-size: 1.3rem;
+        }
+
+        i {
+            color: red;
+            padding-right: .3rem;
+        }
+
+        li {
+            padding-left: 2rem;
+
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}
+
+// dashboard
+
+.money-display {
+
+    .flex {
+        box-shadow: 12px 12px 2px 1px (#f1f1f1);
+        padding: 2rem;
+        //background: #818181 rgba(0, 0, 255, .2);
+    }
+
+    i {
+        padding-right: 2rem;
+    }
+
+}
+
+// get loans
+
+.get-loans {
+
+    .flex {
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .class-1,
+    .class-2 {
+        box-shadow: 12px 12px 2px 1px (#f1f1f1);
+        // color: blue;
+        padding: 2rem;
+
+        label,
+        h5 {
+            font-size: 1rem;
+            color: #818181;
+        }
+
+        em {
+            font-size: .7rem;
+            color: #818181;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .div-button {
+        margin: 3rem 0 3rem 25rem;
+    }
+}
+
+
+// login
+
+.log-in {
+
+    .login-form {
+        margin-top: 3rem;
+
+
+        label {
+            color: #818181;
+            // font-weight: 400;
+            // font-size: 1.3rem;
+        }
+
+        .button-div {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            width: 50%;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// sign-up
+
+.sign-up {
+
+    height: 100%;
+
+    form {
+        margin-top: 3rem;
+    }
+
+    .button-div {
+        margin-top: 2rem;
+
+        .btn {
+            width: 50%;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

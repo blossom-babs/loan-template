@@ -1,46 +1,76 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kamara</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamara - Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <body>
-        <div class="wrapper">
+<body style="background-color: #fff;">
+
+    <div class="container">
+
+        <div class="top-nav">
             <h1>Kamar<span>a.</span></h1>
-            <p><b>Register</b> with Kamara to be notified of scholarship opportunities all around the world.</p>
-            <div class="form">
-                <input class="form-control" type="text" name="fullName" placeholder="Full Name" id="">
-                <input class="form-control" type="email" name="email" placeholder="Email">
-                <label for="level">Choose Level:</label>
-                <select class="form-control" id="level" name="level">
-                    <option value="Undergraduate">Undergraduate</option>
-                    <option value="Graduate">Graduate</option>
-                    <option value="Postgraduate">Postgraduate</option>
-                     <option value="all">All Level</option>
-                </select>
-                       <label class="two" for="field">Choose Field:</label>
-                       <select class="form-control" id="field" name="field">
-                           <option value="Science">Science</option>
-                           <option value="Business">Business</option>
-                           <option value="health">Health</option>
-                             <option value="Engineering">Engineering</option>
-                               <option value="Humanities">Humanities</option>
-                           <option value="all">All Fields</option>
-                       </select>
-                   <input class="form-control password" type="password" name="password" placeholder="Password">
-                   <button class="btn btn-lg btn-outline-danger">Submit</button>
-            </div>
+            <ul>
+                <li><i class="fas fa-user-alt"></i> <a href="/index.html">My Account</a> </li>
+                <li> <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a></li>
+            </ul>
         </div>
 
-        <script src="" async defer></script>
-    </body>
+        <div class="side-nav">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Services</a>
+            <a href="/login.html">Log Out</a>
+            <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a>
+        </div>
 
-    </html>
+        <div class="main">
+            <div class="row money-display">
+                <div class="col-lg-4">
+                    <div class="flex">
+                        <div class="naira-img"><i class="fas fa-money-check-alt"></i></div>
+                        <div>
+                            <h6>Loan Taken</h6>
+                            <p>50000.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="flex">
+                        <div class="naira-img"><i class="fas fa-money-check-alt"></i></div>
+                        <div>
+                            <h6>Interest To be Paid</h6>
+                            <p>20.02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="flex">
+                        <div class="naira-img"><i class="fas fa-money-check-alt"></i></div>
+                        <div>
+                            <h6>Amount Repaid</h6>
+                            <p>100.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
