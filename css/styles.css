@@ -81,6 +81,72 @@ hr {
   padding-top: 0;
 }
 
+.side-nav {
+  display: block;
+}
+
+.side-nav-two {
+  display: none;
+}
+
+.top-nav .side-nav-two-span {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .top-nav .side-nav-two-span {
+    display: block;
+  }
+  .top-nav .get-loan {
+    display: none;
+  }
+}
+
+.side-nav-two {
+  height: 100%;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #010101;
+  transition: 0.5s;
+  top: 6rem;
+}
+
+.side-nav-two a:nth-child(1) {
+  padding-top: 5rem;
+}
+
+.side-nav-two a {
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav-two a:hover {
+  color: #f1f1f1;
+}
+
+.side-nav-two .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media (max-height: 450px) {
+  .side-nav-two {
+    padding-top: 15px;
+  }
+  .side-nav-two a {
+    font-size: 18px;
+  }
+}
+
 /*       border-top-style: none;
 border-right-style: hidden;
 border-left-style: hidden;
@@ -180,6 +246,39 @@ border-bottom-style: groove;
   padding-right: 2rem;
 }
 
+@media (max-width: 768px) {
+  .top-nav h1 {
+    margin-left: 5px;
+  }
+  .top-nav ul {
+    display: block;
+    margin-right: 5rem;
+    list-style-type: none;
+  }
+  .flex {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .side-nav {
+    display: none;
+  }
+  .flex {
+    margin-left: -10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-nav h1 {
+    margin-left: -1rem;
+  }
+  .top-nav ul li {
+    margin-right: 15rem;
+  }
+}
+
 .get-loans .flex {
   align-items: center;
   justify-content: space-evenly;
@@ -215,6 +314,23 @@ border-bottom-style: groove;
   margin: 3rem 0 3rem 25rem;
 }
 
+@media (max-width: 800px) {
+  .get-loans .flex {
+    display: block;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .get-loans .flex {
+    display: block;
+    margin-left: -10rem;
+  }
+  .get-loans .div-button {
+    margin-left: -10rem;
+  }
+}
+
 .log-in .login-form {
   margin-top: 3rem;
 }
@@ -239,6 +355,13 @@ border-bottom-style: groove;
   text-decoration: none;
 }
 
+@media (max-width: 500px) {
+  .log-in {
+    margin-left: 1rem;
+    width: 100%;
+  }
+}
+
 .sign-up {
   height: 100%;
 }
@@ -261,5 +384,19 @@ border-bottom-style: groove;
 
 .sign-up .button-div .btn a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .sign-up {
+    margin-left: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sign-up {
+    margin-left: 1rem;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

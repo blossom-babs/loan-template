@@ -17,6 +17,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -26,9 +27,10 @@
 
         <div class="top-nav">
             <h1>Kamar<span>a.</span></h1>
+            <span id="openSideNav" class="side-nav-two-span" style="font-size:30px;cursor:pointer">&#9776;</span>
             <ul>
                 <li><i class="fas fa-user-alt"></i> <a href="/index.html">My Account</a> </li>
-                <li> <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a></li>
+                <li class="get-loan"> <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a></li>
             </ul>
         </div>
 
@@ -39,7 +41,15 @@
             <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a>
         </div>
 
-        <div class="main">
+                <div id="mySideNav" class="side-nav-two">
+                     <a id="closeSideNav" href="javascript:void(0)" class="close-btn">&times;</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/index.html">Services</a>
+                    <a href="/login.html">Log Out</a>
+                    <a href="/getLoans.html"> <button class="btn btn-md btn-outline-danger">Get Loans</button></a>
+                </div>
+
+        <div class="main dashboard">
             <div class="row money-display">
                 <div class="col-lg-4">
                     <div class="flex">

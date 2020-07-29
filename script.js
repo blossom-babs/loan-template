@@ -1,29 +1,22 @@
 // alert('this should work')
 
-const form = document.getElementById('form')
-const fullName = document.getElementById('fullName')
-const email = document.getElementById('email')
-const password = document.getElementById('password')
-const error = document.getElementById('error')
+// function openNav() {
+//     document.getElementById("mySideNav").style.width = "250px";
+// }
 
-form.addEventListener('submit', (e) => {
+// function closeNav() {
+//     document.getElementById("mySideNav").style.width = "0";
+// }
 
-    let messages = []
+const openNav = document.getElementById('openSideNav')
+openNav.addEventListener('click', ()=>{
+    const sideNav = document.getElementById('mySideNav')
+    sideNav.style.display = 'block';
+    console.log('but this ought to work nau')
+})
 
-    if (fullName.value == ''){
-   // error.innerText = "Name cannot be empty";
-   messages.push('Name field cannot be empty')
-   console.log('name field cannot be empty')
-    }
-
-        if (email.value.length <= 5) {
-         //   error.innerText = "Invalid email";
-         messages.push('Invalid email')
-            console.log('name field cannot be empty')
-        }
-
-        if(messages.length > 0){
-    e.preventDefault()
-        }
-error.innerText = messages.join (', ')
+const closeNav = document.getElementById('closeSideNav')
+closeNav.addEventListener('click', ()=>{
+    const sideNav = document.getElementById('mySideNav')
+    sideNav.style.display = 'none';
 })

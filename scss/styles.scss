@@ -97,6 +97,81 @@ hr {
 
 }
 
+.side-nav {
+    display: block;
+}
+
+.side-nav-two {
+    display: none;
+}
+
+.top-nav .side-nav-two-span {
+    display: none;
+}
+
+// .side-nav-two {
+//     display: none;
+// }
+
+@media (max-width:500px) {
+    .top-nav .side-nav-two-span {
+        display: block;
+    }
+
+    .top-nav .get-loan {
+        display: none;
+        // background-color: red;
+    }
+}
+
+.side-nav-two {
+    height: 100%;
+    width: 15rem;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: $black;
+    transition: 0.5s;
+    top: 6rem;
+
+    a:nth-child(1) {
+        padding-top: 5rem;
+    }
+
+    a {
+        padding: 2rem;
+        text-decoration: none;
+        font-size: 25px;
+        // color: #818181;
+        color: $white;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-height: 450px) {
+    .side-nav-two {
+        padding-top: 15px;
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
 /*       border-top-style: none;
 border-right-style: hidden;
 border-left-style: hidden;
@@ -214,6 +289,58 @@ border-bottom-style: groove;
 
 }
 
+@media (max-width:768px) {
+
+    .top-nav {
+        h1 {
+            margin-left: 5px;
+
+
+        }
+
+        ul {
+            display: block;
+            margin-right: 5rem;
+            // margin-top: -3rem;
+            list-style-type: none;
+
+        }
+    }
+
+    .flex {
+        //  background-color: blue;
+        margin-left: 10rem;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .side-nav {
+        display: none;
+    }
+
+    .flex {
+        margin-left: -10rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top-nav {
+        h1 {
+            margin-left: -1rem;
+        }
+
+        ul {
+
+            li {
+                margin-right: 15rem;
+            }
+
+        }
+    }
+}
+
 // get loans
 
 .get-loans {
@@ -252,6 +379,30 @@ border-bottom-style: groove;
     }
 }
 
+@media (max-width: 800px) {
+    .get-loans {
+        .flex {
+            display: block;
+            margin-left: 3rem;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .get-loans {
+        .flex {
+
+            display: block;
+            margin-left: -10rem;
+        }
+
+        .div-button {
+            margin-left: -10rem;
+        }
+    }
+}
+
 
 // login
 
@@ -285,6 +436,13 @@ border-bottom-style: groove;
     }
 }
 
+@media (max-width:500px) {
+    .log-in {
+        margin-left: 1rem;
+        width: 100%;
+    }
+}
+
 // sign-up
 
 .sign-up {
@@ -309,5 +467,19 @@ border-bottom-style: groove;
                 }
             }
         }
+    }
+}
+
+@media (max-width:500px) {
+    .sign-up {
+        margin-left: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .sign-up {
+        margin-left: 1rem;
+        width: 100%;
     }
 }
